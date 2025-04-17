@@ -909,3 +909,49 @@ text-decoration: underline;
     border: 1px solid currentColor;
     border-radius: 9999px;
     }
+    @media (max-width: 768px) {
+        /* Hide left and right columns */
+        .left-side,
+        .right-side {
+          display: none;
+        }
+      
+        /* Expand the center content */
+        .container {
+          justify-content: center;
+        }
+      
+        .content {
+          width: 100vw;
+          border-left: none;
+          border-right: none;
+        }
+      
+        /* Adjust tweet input and button */
+        .tweet .right-column .bottom-row {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      
+        .tweet .right-column .bottom-row .tweet-btn {
+          width: 100%;
+          margin-top: 10px;
+        }
+      
+        /* Fix search bar position and width */
+        .search-bar {
+          width: 90%;
+          right: 5%;
+        }
+      
+        .search-input {
+          width: 100% !important;
+        }
+      
+        /* Adjust font sizes for mobile */
+        .left-navbar a span,
+        .content-header span {
+          font-size: 16px;
+        }
+      }
+      
